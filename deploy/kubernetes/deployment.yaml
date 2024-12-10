@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-wine-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fastapi-wine
+  template:
+    metadata:
+      labels:
+        app: fastapi-wine
+    spec:
+      containers:
+      - name: fastapi-wine
+        image: kennygeorgeds/fastapi-wine-app:latest  # Reference DockerHub image
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+
