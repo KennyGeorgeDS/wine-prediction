@@ -4,6 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
+packages = [
+    { include = "model" }  # Include the 'model' directory
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -17,7 +20,12 @@ pydantic = "^2.10.3"
 fastapi = "^0.115.6"
 uvicorn = "^0.32.1"
 
+# add command line tools to the pyproject.toml to execute model/training/model_training.py
+[tool.poetry.scripts]
+train_model = "model.training.model_training:main"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
