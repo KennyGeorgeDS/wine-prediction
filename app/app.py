@@ -83,4 +83,9 @@ async def predict(input_data: WineInput):
     # Determine wine type
     wine_type = "Red" if prediction > 0.5 else "White"
 
-    return {"prediction": prediction, "wine_type": wine_type}  # Probability output by the model  # Interpreted result
+    return return {
+        "red_probability": prediction,
+        "white_probability": 1 - prediction,
+        "predicted_type": wine_type
+    }
+
