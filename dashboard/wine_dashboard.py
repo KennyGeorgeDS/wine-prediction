@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # FastAPI endpoint URL
-API_URL = "http://acd7184e54d314c67844b5cba4797e3e-683884404.us-east-2.elb.amazonaws.com/predict"
+API_URL = 'http://aa13c9fb1b5e2447d9964da3bc7c15a6-533241037.us-east-2.elb.amazonaws.com/predict'
 
 # Streamlit app
 st.title("Wine Prediction Dashboard")
