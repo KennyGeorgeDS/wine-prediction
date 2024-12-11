@@ -3,11 +3,12 @@
 ## Overview
 This project is a demonstration of a deep learning model that predicts whether a wine is RED or WHITE based on its chemical properties. The model is trained on the [Wine Quality Dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality) from the UCI Machine Learning Repository. The dataset contains 12 features and 1 target variable. The features are chemical properties of the wine, such as pH, alcohol content, and acidity. The target variable is the type of wine, which can be either RED or WHITE. The model is trained using a deep learning architecture with PyTorch. The model is then deployed as a RESTful API using FastAPI. The API is deployed on AWS EKS using Docker and Kubernetes.
 
-### Access Points
+### Public Access to the Deployed Services
 
-[Streamlit Dashboard](http://a67ad9e1fe62a416a951d642dcb4cc27-1424045864.us-east-2.elb.amazonaws.com/) 
+###### LINKS
+[Streamlit Dashboard](http://ab09a4aa8f835488aa14ba8e12db9846-1780695749.us-east-2.elb.amazonaws.com/) 
 
-[FastAPI Service](http://acd7184e54d314c67844b5cba4797e3e-683884404.us-east-2.elb.amazonaws.com/docs)
+[FastAPI Service Swagger Docs](http://aa13c9fb1b5e2447d9964da3bc7c15a6-533241037.us-east-2.elb.amazonaws.com/docs)
 
 ### Tools Used
 - Python
