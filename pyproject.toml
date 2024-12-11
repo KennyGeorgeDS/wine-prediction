@@ -21,6 +21,8 @@ fastapi = "^0.115.6"
 uvicorn = "^0.32.1"
 
 # add command line tools to the pyproject.toml to execute model/training/model_training.py
+streamlit = "^1.41.0"
+requests = "^2.32.3"
 [tool.poetry.scripts]
 train_model = "model.training.model_training:main"
 

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: streamlit-wine-dashboard
+  labels:
+    app: streamlit-wine-dashboard
+spec:
+  type: LoadBalancer
+  selector:
+    app: streamlit-wine-dashboard
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8501
+

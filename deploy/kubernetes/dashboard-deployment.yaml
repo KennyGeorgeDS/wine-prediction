@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streamlit-wine-dashboard
+  labels:
+    app: streamlit-wine-dashboard
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: streamlit-wine-dashboard
+  template:
+    metadata:
+      labels:
+        app: streamlit-wine-dashboard
+    spec:
+      containers:
+      - name: streamlit-wine-dashboard
+        image: kennygeorgeds/wine-dashboard:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8501
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+
