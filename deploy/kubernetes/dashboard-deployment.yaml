@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: streamlit-wine-dashboard
-        image: kennygeorgeds/wine-dashboard:v1
+        image: kennygeorgeds/wine-dashboard:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
